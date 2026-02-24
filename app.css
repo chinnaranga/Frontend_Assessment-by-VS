@@ -1,0 +1,129 @@
+/* Global reset */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont;
+    background-color: #0b0f19;
+    color: #e5e7eb;
+}
+
+/* React Flow canvas */
+.react-flow {
+    background-color: #0b0f19;
+}
+
+/* Grid background */
+.react-flow__background {
+    background-color: #0b0f19;
+}
+
+/* Improve grid contrast */
+.react-flow__background pattern {
+    stroke: #1f2937;
+}
+
+/* Darker canvas */
+.react-flow__pane {
+    background-color: #0b0f19;
+}
+
+/* Selection box */
+.react-flow__selection {
+    background: rgba(99, 102, 241, 0.15);
+    border: 1px solid #6366f1;
+}
+
+/* Controls (zoom, fit view) */
+.react-flow__controls {
+    background: #111827;
+    border-radius: 8px;
+    border: 1px solid #1f2937;
+}
+
+.react-flow__controls-button {
+    background: #1f2937;
+    border: 1px solid #374151;
+    color: #e5e7eb;
+}
+
+.react-flow__controls-button:hover {
+    background: #374151;
+}
+
+/* Edges */
+.react-flow__edge-path {
+    stroke: #6b7280;
+    stroke-width: 2;
+}
+
+/* Toolbar */
+.pipeline-toolbar {
+    background: #111827;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #1f2937;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.toolbar-nodes {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.draggable-node {
+    background: #1f2937;
+    color: #e5e7eb;
+    border: 1px solid #374151;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: grab;
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    transition: all 0.2s;
+}
+
+.draggable-node:hover {
+    background: #374151;
+    border-color: #4b5563;
+    transform: translateY(-1px);
+}
+
+/* Submit Button */
+.submit-button-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: transparent;
+}
+
+.submit-button {
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(79, 70, 229, 0.2);
+    transition: all 0.2s;
+}
+
+.submit-button:hover {
+    background: #4338ca;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 10px rgba(79, 70, 229, 0.3);
+}
+
+.submit-button:active {
+    transform: translateY(0);
+}

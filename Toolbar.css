@@ -1,0 +1,68 @@
+.toolbar {
+    display: flex;
+    gap: 12px;
+    padding: 12px 20px;
+    background: #0f172a;
+    border-bottom: 1px solid #1f2937;
+    align-items: center;
+    justify-content: space-between;
+    /* Space between nodes and action buttons */
+    flex-wrap: wrap;
+}
+
+.toolbar-section {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Common button/node styles */
+.toolbar-item,
+.toolbar button {
+    background: #1f2937;
+    color: #e5e7eb;
+    border: 1px solid #374151;
+    border-radius: 8px;
+    /* Slightly rounder */
+    padding: 8px 14px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    /* Ensure pointer on both buttons and divs */
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    /* Fixed height for consistency */
+}
+
+.toolbar-item:hover,
+.toolbar button:hover {
+    background: #374151;
+    border-color: #6b7280;
+    transform: translateY(-1px);
+}
+
+.toolbar button:active {
+    background: #4b5563;
+    transform: translateY(0);
+}
+
+/* Primary Button (Submit) */
+.toolbar button.primary {
+    background: #6366f1;
+    /* Indigo 500 */
+    border-color: #6366f1;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 4px 6px -1px rgba(99, 102, 241, 0.4);
+}
+
+.toolbar button.primary:hover {
+    background: #4f46e5;
+    /* Indigo 600 */
+    border-color: #4f46e5;
+    box-shadow: 0 6px 8px -1px rgba(99, 102, 241, 0.5);
+}

@@ -1,0 +1,53 @@
+.text-node-textarea {
+    width: 100%;
+    background: #020617;
+    color: #e5e7eb;
+    border: 1px solid #1f2937;
+    border-radius: 6px;
+    padding: 8px 10px;
+    font-size: 13px;
+    line-height: 1.4;
+    resize: none;
+    outline: none;
+}
+
+.text-node-textarea::placeholder {
+    color: #6b7280;
+}
+
+.text-node-textarea:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 1px rgba(99, 102, 241, 0.4);
+}
+
+.variable-bindings {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-top: 1px solid #1f2937;
+    padding-top: 10px;
+}
+
+.binding-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.binding-row label {
+    font-size: 11px;
+    color: #9ca3af;
+    font-weight: 500;
+}
+
+.binding-row select {
+    width: 65%;
+    background: #020617;
+    border: 1px solid #1f2937;
+    color: #e5e7eb;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 11px;
+}
